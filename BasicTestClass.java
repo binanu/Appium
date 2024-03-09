@@ -17,9 +17,10 @@ public class BasicTestClass extends BaseClass {
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "MyPixelXLEmulator");
 		cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
-		
+		System.out.println("You are awesome!!!!");
 		AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement> (new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		return driver;
+		
 	}
 
 }
